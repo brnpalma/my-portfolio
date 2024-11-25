@@ -1,35 +1,5 @@
-import { styled } from "@mui/material";
-
-const marginLeftRight = "3%";
-
-export const StyledHero = styled("div")(() => ({
-  backgroundColor: "rgb(29 29 29 / 91%)",
-  borderRadius: "16px",
-  boxShadow: "5px 5px 5px rgb(0 0 0 / 36%)",
-  marginLeft: marginLeftRight,
-  marginRight: marginLeftRight,
-  marginBottom: "5px",
-  marginTop: "40px",
-  padding: "5px"
-}));
-
-export const StyledHeroNav = styled("div")(() => ({
-  backgroundColor: "rgb(29 29 29 / 91%)",
-  borderRadius: "16px",
-  boxShadow: "5px 5px 5px rgb(0 0 0 / 36%)",
-  marginLeft: marginLeftRight,
-  marginRight: marginLeftRight,
-  marginBottom: "5px",
-  marginTop: "20px",
-  padding: "5px",
-  paddingLeft: "0px"
-}));
-
-export const StyledImageLanguage = styled("img")(() => ({
-  width: "5%",
-  margin: "10px",
-}));
-
-export const StyledImageAvatar = styled("img")(() => ({
-    width: "78%",
-  }));
+export const marginLeftRight = "5%";
+export const backgroundCards = "rgb(29 29 29 / 91%)";
+export const boxShadow = "5px 5px 5px rgb(0 0 0 / 36%)";
+export const styledGradient =  "linear-gradient(90deg, rgba(229, 62, 168, .906), rgba(172, 47, 189, .925) 60%)";
+export const defaultPadding = "10px";

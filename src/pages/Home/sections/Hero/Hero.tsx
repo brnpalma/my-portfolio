@@ -1,8 +1,9 @@
-import { Button, Container, Grid2, Typography } from "@mui/material";
+import { Grid2, Typography } from "@mui/material";
 import Avatar from "../../../../assets/images/avatar4.png";
 import SendIcon from "@mui/icons-material/Send";
-import { StyledHero, StyledImageAvatar } from "../../../../constants/constants";
+import { StyledHero, StyledImageAvatar } from "../../../../theme";
 import { textGradientStyle } from "../../../../theme";
+import StyledButton from "../../../../components/StyledButton/StyledButton";
 
 const Hero = () => {
   //   let CargoEng = "I'm a Full Stack Developer"
@@ -11,12 +12,12 @@ const Hero = () => {
   return (
     <>
       <StyledHero>
-        <Container maxWidth="lg">
+        {/* <Container maxWidth="lg"> */}
           <Grid2 container spacing={1} alignItems="center">
             <Grid2
               size={{ xs: 12, md: 4 }}
               sx={{
-                textAlign: { xs: "center", md: "left" },
+                textAlign: { xs: "center", md: "left",  },
               }}
             >
               <StyledImageAvatar src={Avatar}></StyledImageAvatar>
@@ -34,15 +35,15 @@ const Hero = () => {
                 I'm a Full Stack Developer
               </Typography>
               <Grid2 container display="flex" justifyContent="center">
-                <Grid2 size={12} display="flex" justifyContent="center">
-                  <Button>
+                <Grid2 size={12} display="flex" justifyContent="center" marginTop="10px">
+                  <StyledButton>
                     <SendIcon /> Contact Me
-                  </Button>
+                  </StyledButton>
                 </Grid2>
               </Grid2>
             </Grid2>
           </Grid2>
-        </Container>
+        {/* </Container> */}
       </StyledHero>
     </>
   );
