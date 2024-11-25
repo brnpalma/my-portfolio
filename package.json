@@ -1,6 +1,7 @@
 {
+  "homepage": "https://brnpalma.github.io/my-portfolio",
   "name": "my-portifolio",
-  "private": true,
+  "private": false,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
