@@ -1,5 +1,5 @@
 import { styled } from "@mui/material";
-import { boxShadow } from "../../constants/constants";
+import { boxShadow } from "../../theme";
 
 interface LanguageButtonProps {
     backgroundImage: string

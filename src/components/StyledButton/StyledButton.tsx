@@ -1,5 +1,5 @@
 import { styled } from "@mui/material";
-import { boxShadow, styledGradient } from "../../constants/constants";
+import { boxShadow, styledGradient } from "../../theme";
 import React, { ReactNode } from "react";
 
 interface StyledButtonProps {

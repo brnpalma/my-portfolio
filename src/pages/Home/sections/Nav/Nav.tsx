@@ -3,7 +3,7 @@ import Brazil from "../../../../assets/images/brazil.png";
 import Eua from "../../../../assets/images/eua.png";
 import { StyledHeroNav } from "../../../../theme";
 import LanguageButton from "../../../../components/StyledButton/LanguageButton";
-import { defaultPadding } from "../../../../constants/constants";
+import { defaultPadding } from "../../../../theme";
 
 const Nav = () => {
   return (
