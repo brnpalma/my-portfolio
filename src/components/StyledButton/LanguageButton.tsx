@@ -2,10 +2,11 @@ import { styled } from "@mui/material";
 import { boxShadow } from "../../theme";
 
 interface LanguageButtonProps {
-    backgroundImage: string
+    backgroundImage: string,
+    marginLeft: string
 }
 
-const LanguageButton: React.FC<LanguageButtonProps> = ({ backgroundImage }) => {
+const LanguageButton: React.FC<LanguageButtonProps> = ({ backgroundImage, marginLeft }) => {
   const LanguageButton = styled("button")(() => ({
     background: `url(${backgroundImage}) no-repeat center center`,
     backgroundSize: "cover",
@@ -15,7 +16,7 @@ const LanguageButton: React.FC<LanguageButtonProps> = ({ backgroundImage }) => {
     cursor: "pointer",
     width: "40px",
     height: "40px",
-    marginLeft: "10px",
+    marginLeft: marginLeft,
     '&:hover':{
         opacity: ".8",
         boxShadow: boxShadow

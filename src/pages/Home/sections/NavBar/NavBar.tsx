@@ -3,9 +3,9 @@ import Brazil from "../../../../assets/images/brazil.png";
 import Eua from "../../../../assets/images/eua.png";
 import { StyledHeroNav } from "../../../../theme";
 import LanguageButton from "../../../../components/StyledButton/LanguageButton";
-import { defaultPadding } from "../../../../theme";
+import { defaultPaddingNav } from "../../../../theme";
 
-const Nav = () => {
+const NavBar = () => {
   return (
     <>
       <StyledHeroNav>
@@ -14,11 +14,11 @@ const Nav = () => {
           container
           spacing={5}
           justifyContent="space-between"
-          padding={defaultPadding}
+          padding={defaultPaddingNav}
         >
           <Grid2 size={{ xs: 12, md: 6 }}>
-            <LanguageButton backgroundImage={Brazil}></LanguageButton>
-            <LanguageButton backgroundImage={Eua}></LanguageButton>
+            <LanguageButton backgroundImage={Brazil} marginLeft="0px"></LanguageButton>
+            <LanguageButton backgroundImage={Eua} marginLeft="10px"></LanguageButton>
           </Grid2>
           <Grid2 container display="flex" alignItems="center">
             <Grid2 size={{ md: 2.4 }} display="flex" justifyContent="center">
@@ -54,4 +54,4 @@ const Nav = () => {
   );
 };
 
-export default Nav;
+export default NavBar;

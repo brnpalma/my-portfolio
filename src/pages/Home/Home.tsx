@@ -1,10 +1,10 @@
 import Hero from "./sections/Hero/Hero"
-import Nav from "./sections/Nav/Nav"
+import NavBar from "./sections/NavBar/NavBar"
 
 const Home = () => {
     return (
       <>
-      <Nav/>
+      <NavBar/>
       <Hero/>
       </>
     )

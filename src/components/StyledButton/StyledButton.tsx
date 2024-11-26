@@ -15,12 +15,9 @@ const StyledButton: React.FC<StyledButtonProps> = ({ children }) => {
     alignItems: "center",
     justifyContent: "center",
     gap: "5px",
-    fontWeight: "600",
-    fontSize: "15px",
     padding: "5px 20px",
     transition: "all .3s",
     width: "fit-content",
-    fontFamily: theme.typography.fontFamily,
     border: "none",
     cursor: "pointer",
     '&:hover':{
