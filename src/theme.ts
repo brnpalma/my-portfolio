@@ -9,7 +9,7 @@ export const marginLeftRight = "3%";
 export const styledGradient =  "linear-gradient(90deg, rgba(229, 62, 168, .906), rgba(172, 47, 189, .925) 60%)";
 
 
-export let theme = createTheme({
+const baseTheme = createTheme({
   palette: {
     primary: {
       main: "#fff",
@@ -26,13 +26,13 @@ export let theme = createTheme({
   },
 });
 
+export const theme = responsiveFontSizes(baseTheme);
+
 export const textGradientStyle = {
   background: styledGradient,
   WebkitBackgroundClip: "text",
   color: "transparent",
 };
-
-theme = responsiveFontSizes(theme);
 
 export const StyledHero = styled("div")(() => ({
     backgroundColor: backgroundCards,

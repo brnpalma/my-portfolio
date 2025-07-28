@@ -1,8 +1,7 @@
 import { Box, Grid2, Typography } from "@mui/material";
 import Avatar from "../../../../assets/images/avatar5.png";
 import SendIcon from "@mui/icons-material/Send";
-import { StyledHero, StyledImageAvatar } from "../../../../theme";
-import { textGradientStyle } from "../../../../theme";
+import { StyledHero, StyledImageAvatar , textGradientStyle } from "../../../../theme";
 import StyledButton from "../../../../components/StyledButton/StyledButton";
 import { AnimatedBackground } from "../../../../components/AnimatedBackground";
 
@@ -11,7 +10,6 @@ const Hero = () => {
   //   let CargoPtbr = "Desenvolvedor Full Stack"
 
   return (
-    <>
       <StyledHero>
         {/* <Container maxWidth="lg"> */}
         <Grid2 container spacing={1} alignItems="center">
@@ -48,7 +46,6 @@ const Hero = () => {
         </Grid2>
         {/* </Container> */}
       </StyledHero>
-    </>
   );
 };
 
